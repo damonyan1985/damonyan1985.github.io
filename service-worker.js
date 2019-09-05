@@ -34,6 +34,11 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/index.html"), {
-  
-  blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
+<<<<<<< HEAD
+
+  blacklist: [/^\/_/, /\/[^\/?]+\.[^\/]+$/],
+=======
+
+  blacklist: [/^\/_/, /\/[^\/?]+\.[^\/]+$/],
+>>>>>>> 9aaf16374f4401af26b9341b21b74052a44b9acc
 });
