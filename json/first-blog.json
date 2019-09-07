@@ -2,8 +2,12 @@
   "author": "Yanbo",
   "blogs": [
     {
-      "title": "test",
-      "content": "BLOG test"
+      "title": "Android Check run-as",
+      "content": "/blog/blog-2019-09-06.html"
+    },
+    {
+      "title": "BoyiaUI",
+      "content": "/blog/blog-2019-09-07.html"
     }
   ]
 }
