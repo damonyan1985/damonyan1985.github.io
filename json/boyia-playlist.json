@@ -1,23 +1,23 @@
 [
   {
     "playId": "0",
-    "name": "Cruisin",
-    "author": "Sioen",
-    "imgUrl": "http://p2.music.126.net/vFrg08byGoZcE5AuiFubww==/2352954883494517.jpg?param=200y200",
-    "playUrl": "http://m10.music.126.net/20190926090607/dc1b6532a1864f0c9c9c0990dcea20a5/ymusic/b068/0c48/937b/1b147cb56e4e867635c6e361dae56149.flac"
+    "name": "Hero",
+    "author": "Heng Shan",
+    "imgUrl": "https://imgessl.kugou.com/uploadpic/softhead/400/20130531/20130531162457903.jpg",
+    "playUrl": "https://webfs.yun.kugou.com/201909270912/cc5139f4187a6e47f1f4b3f17aa0b7ed/G013/M02/00/13/rYYBAFUPd5yACKuJAJVrqiKPMTI075.mp3"
   },
   {
     "playId": "1",
-    "name": "NEXT TO YOU",
-    "imgUrl": "http://p2.music.126.net/SVJNKYtlB_n9I7p0017Ndw==/6635552674995921.jpg?param=200y200",
-    "author": "Ken Arai",
-    "playUrl": "http://m10.music.126.net/20190926094614/321b03fcc77767a49d11cb1f01d71a1b/ymusic/f230/dc91/93ad/801359f2b938c41adc112684442b489e.flac"
+    "name": "History Sky",
+    "imgUrl": "https://p3fx.kgimg.com/stdmusic/20190906/20190906032722126411.jpg",
+    "author": "Mao A Min",
+    "playUrl": "https://webfs.yun.kugou.com/201909270917/2a8633ff485e82c7d63a4b8480b1dbbb/G012/M08/13/15/rIYBAFUKj-OAO60lAC3k6BOqVUI517.mp3"
   },
   {
     "playId": "2",
-    "name": "Photograph",
-    "imgUrl": "http://p2.music.126.net/coUnPtrHg0zUozRCwYOxog==/6051711999665662.jpg?param=200y200",
-    "author": "Ed Sheeran",
-    "playUrl": "http://m10.music.126.net/20190926094812/73e0fac4c67e555dfeb41e908eb9d89d/ymusic/1ed0/a4dc/8035/1aa48604542cce3a061ece01f8d46383.mp3"
+    "name": "Xiao Xue",
+    "imgUrl": "https://p3fx.kgimg.com/stdmusic/20150718/20150718083319235044.jpg",
+    "author": "Ren Xian Qi",
+    "playUrl": "https://webfs.yun.kugou.com/201909270921/9c7d4f7bc5c1b9ecf49e0f3fd78b7406/G008/M08/1C/17/SA0DAFUKmm2AYijKAF12viG0Cws590.mp3"
   }
 ]
