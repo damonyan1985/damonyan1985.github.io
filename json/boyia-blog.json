@@ -1,17 +1,17 @@
 {
-	"author":"Yanbo",
-	"blogs":[
+	"author": "Yanbo",
+	"blogs": [
 		{
-			"content":"/blog/blog-20190918001735.html",
-			"title":"Boyia Framework Design"
+			"content": "/blog/blog-20190918001735.html",
+			"title": "Boyia Framework Design"
 		},
 		{
-			"content":"/blog/blog-2019-09-07.html",
-			"title":"BoyiaUI"
+			"content": "/blog/blog-2019-09-07.html",
+			"title": "BoyiaUI"
 		},
 		{
-			"content":"/blog/blog-2019-09-06.html",
-			"title":"Android Check run-as"
+			"content": "/blog/blog-2019-09-06.html",
+			"title": "Android Check run-as"
 		}
 	]
 }
