@@ -1,0 +1,56 @@
+.bui-switch > label::before {
+  background: rgb(0, 0, 0);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 3rem;
+  content: '';
+  height: 3rem;
+  margin-top: -0.5rem;
+  position:absolute;
+  opacity: 0.3;
+  transition: all 0.4s ease-in-out;
+  width: 6.2rem;
+}
+
+.bui-switch > label::after {
+  background: rgb(255, 255, 233);
+  border-radius: 3rem;
+  box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.6);
+  content: '';
+  height: 3rem;
+  left: 0rem;
+  margin-top: 0;
+  position: absolute;
+  top: -0.5rem;
+  transition: all 0.4s ease-in-out;
+  width: 3.2rem;
+}
+
+
+.bui-switch > input[type="checkbox"]:checked + label::after {
+  background: inherit;
+  left: 3rem;
+}
+
+.bui-switch > input[type="checkbox"]:checked + label::before {
+  background: inherit;
+  opacity: 0.5;
+}
+
+.bui-theme-blue {
+  background-color: #428bca;
+}
+
+.bui-theme-darkcyan {
+  background-color: darkcyan;
+}
+
+.bui-switch > input[type="checkbox"] {
+  display: none;   
+}
+
+.bui-switch > label {
+  cursor: pointer;
+  height: 0rem;
+  position: relative; 
+  width: 6rem;  
+}
