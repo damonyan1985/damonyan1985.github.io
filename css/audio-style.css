@@ -151,6 +151,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  font-size: 1.2rem;
   position: relative;
 }
 
@@ -160,6 +161,7 @@
   color: white;
   width: 20rem;
   font-size: 1.2rem;
+  pointer-events: none;
 }
 
 .audio-progress-text {
@@ -172,6 +174,7 @@
   width: 5.3rem;
   overflow: hidden;
   width: 18rem;
+  pointer-events: none;
 }
 
 @keyframes audio-title-anim {
@@ -200,6 +203,9 @@
   margin-top: 0.2rem;
   transform-origin: 50% 0 0;
   animation: audio-playlist-anim 500ms ease-out;
+  border-radius: 1rem;
+  background-color: rgba(108, 191, 255, 1);
+  color: #FFFFFF;
 }
 
 .audio-playlist-container-hide {
@@ -219,10 +225,8 @@
 
 .audio-playlist-item {
   width: 32rem;
-  height: 5rem;
-  font-size: 1.2rem;
-  color: #FFFFFF;
-  background-color:#87CEFA;
+  height: 3rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -231,22 +235,22 @@
   position: relative;
 }
 
-/*
-.audio-playlist-item:hover {
-  background-color:#B0E0E6;
-}
-
-
-button {
-  background-color: transparent;
-  border: none;
+.audio-playlist-even-item {
+  width: 32rem;
+  height: 3rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   cursor: pointer;
+  border-top: 0.05rem dotted #B0E0E6;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
 }
-*/
 
 .audio-playlist-item-hover {
   width: 32rem;
-  height: 5rem;
+  height: 3rem;
   position: absolute;
   overflow: hidden;
   z-index: 1;
@@ -276,10 +280,24 @@ button {
   margin-left: 2rem;
 }
 
+.audio-item-name-focus {
+  width: 8rem;
+  text-align: left;
+  margin-left: 2rem;
+  color: #0cf565;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+
 .audio-item-name {
   width: 8rem;
   text-align: left;
   margin-left: 2rem;
+  color: #FFFFFFFF;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
 }
 
 .audio-item-author {
@@ -292,9 +310,9 @@ button {
 
 .audio-item-focus {
   width: 32rem;
-  height: 5rem;
+  height: 3rem;
   font-size: 1.5rem;
-  color: #00E5EE;
+  color: #FFFFFFFF;
   background-color:#4682B4;
   display: flex;
   flex-direction: row;
@@ -399,4 +417,144 @@ button {
 
 .audio-widget-hide {
   display: none;
+}
+
+.audio-lyric-button-container {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.audio-lyric-button-container:hover {
+  box-shadow: darkgray 0rem 0rem 0.5rem 0.5rem;
+}
+
+@keyframes audio-lyrics-anim {
+  0% {
+    transform: scaleX(0.001);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.audio-lyrics-root {
+  position: absolute;
+  left: 33rem;
+  top: 0;
+  transform-origin: 0 50% 0;
+  animation: audio-lyrics-anim 500ms ease-out;
+  background-color: rgba(108, 191, 255, 1);
+  border-radius: 1rem;
+}
+
+.audio-lyrics-container {
+  width: 20rem;
+  height: 28.7rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+.audio-lyric-item {
+  text-align: left;
+  margin-top: 0.2rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  height: 1.6rem;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.audio-lyric-item-focus {
+  text-align: left;
+  margin-top: 0.2rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: #4682B4;
+  font-weight: 900;
+  height: 1.6rem;
+  overflow: hidden;
+  transform: scale(1.2);
+  transform-origin: 0 50% 0;
+  transition: all 0.3s linear;
+}
+
+.audio-lyrics-container::-webkit-scrollbar {
+  width: 1rem;
+  background-color: #87CEFA;
+  border-radius: 1rem;
+}
+
+.audio-lyrics-container::-webkit-scrollbar-thumb{
+  border-radius: 0.5rem;
+  background: #FFFFFF99;
+  margin-right: 0.2rem;
+}
+
+.audio-shadow-top {
+  background: linear-gradient(to bottom, #87CEFAEE 0%, rgba(0, 0, 0, 0) 95%);
+  height: 6rem;
+  width: 20rem;
+  position: absolute;
+  z-index: 1;
+  top: 0rem;
+  border-radius: 1rem;
+}
+
+.audio-shadow-bottom {
+  background: linear-gradient(to top, #87CEFAEE 0%, rgba(0, 0, 0, 0) 95%);
+  top: 22.7rem;
+  height: 6rem;
+  width: 20rem;
+  position: absolute;
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+.audio-no-lyric-tip {
+  color: #FFFFFF99;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 28.7rem;
+  width: 20rem;
+  height: 28.7rem;
+}
+
+.effect-container {
+  width: 18rem;
+  height: 3.8rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes audio-playlist-title-scroll {
+  0% {
+      margin-left: 0;
+      transform: translateX(0);
+  }
+  10% {
+      margin-left: 0;
+      transform: translateX(0);
+  }
+  90% {
+      margin-left: 100%;
+      transform: translateX(-100%);
+  }
+  100% {
+      margin-left: 100%;
+      transform: translateX(-100%);
+  }
 }

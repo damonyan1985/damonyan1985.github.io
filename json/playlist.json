@@ -1,37 +1,52 @@
 [
   {
     "playId": "1",
-    "name": "Hero",
-    "author": "Heng Shan",
-    "imgUrl": "https://img2.baidu.com/it/u=864874962,1612897675&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
-    "playUrl": "https://webfs.ali.kugou.com/202303161704/e7c17e9c6cc0e3d4ae5d04ae6d296df2/v2/5a5937ba9f310e84cd77f8ba1ed55a6c/G198/M02/03/05/ZocBAF5YarmAFVcnAF1W_N_Xlyg711.mp3"
-  },
-  {
-    "playId": "2",
     "name": "History Sky",
     "imgUrl": "https://img0.baidu.com/it/u=1532945040,1740150320&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500",
     "author": "Mao A Min",
-    "playUrl": "https://webfs.ali.kugou.com/202303161704/18dc7aa543388155431b32e86a957e05/KGTX/CLTX001/a3edbe87b0d57db34f20e6b1ff261e74.mp3"
+    "playUrl": "https://webfs.ali.kugou.com/202303191147/5eb7321b2e62ba1e538d9e224c067386/v2/e69068bdc6d9725c3b612bbb838e01b7/G053/M09/11/08/dQ0DAFbNwX-AYpkTAFEMdqX35Yc419.mp3",
+    "lyricUrl": "/lyrics/lishi.lrc"
+  },
+  {
+    "playId": "2",
+    "name": "First Met",
+    "imgUrl": "https://img0.baidu.com/it/u=1532945040,1740150320&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500",
+    "author": "Hao Yi Gang",
+    "playUrl": "/music/dizi.mp3"
   },
   {
     "playId": "3",
-    "name": "Xiao Xue",
+    "name": "Wanted Carter - No Copyright Moscow Mule Bad Music",
     "imgUrl": "https://img0.baidu.com/it/u=949029976,3968815438&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=313",
-    "author": "Ren Xian Qi",
-    "playUrl": "https://webfs.ali.kugou.com/202303161707/8f34a6f458d13e070373a6acca81a9cb/v2/02425d8214c115e00abc18d5e67dbdb6/G203/M03/13/03/a4cBAF5NklGANc8OAF12viG0Cws217.mp3"
+    "author": "Anonymous Author",
+    "playUrl": "/music/wantedcarter.mp3"
   },
   {
     "playId": "4",
-    "name": "Gu Fang Zi Shang",
+    "name": "XIBE - In Your Mind (Vlog No Copyright Music)",
     "imgUrl": "https://img2.baidu.com/it/u=21722136,3394633762&fm=253&fmt=auto&app=138&f=JPEG?w=780&h=366",
-    "author": "Lan Qi Qi",
-    "playUrl": "http://music.163.com/song/media/outer/url?id=447925558.mp3"
+    "author": "XIBE",
+    "playUrl": "/music/xibe.mp3"
   },
   {
     "playId": "5",
-    "name": "First Met",
+    "name": "I Was Always Right Here",
     "imgUrl": "https://img0.baidu.com/it/u=655957234,1961656461&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=396",
     "author": "Hao Yi Gang",
-    "playUrl": "https://webfs.ali.kugou.com/202303161709/eab6e698cfce738be13c74e52a9019cd/KGTX/CLTX001/6f723e33ebb1d406ce287be861d62b23.mp3"
+    "playUrl": "/music/always.mp3"
+  },
+  {
+    "playId": "6",
+    "name": "Lough Leane",
+    "imgUrl": "https://img0.baidu.com/it/u=655957234,1961656461&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=396",
+    "author": "HanLuo&GuRuen",
+    "playUrl": "/music/ll.mp3"
+  },
+  {
+    "playId": "7",
+    "name": "心游太玄 (古琴版)",
+    "imgUrl": "https://img0.baidu.com/it/u=655957234,1961656461&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=396",
+    "author": "Litianbing",
+    "playUrl": "/music/taixuan.mp3"
   }
 ]

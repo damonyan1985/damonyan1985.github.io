@@ -1,7 +1,6 @@
 .audio-player-black {
   width: 32.5rem;
   height: 8.5rem;
-  background: #014464; 
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgb(46, 50, 53) 70%);
   box-shadow: 0 0 5px #5E5E5E;
   border-radius: 1rem;
@@ -91,6 +90,9 @@
 
 .audio-button-container-black:hover {
   box-shadow: darkgray 0rem 0rem 0.5rem 0.5rem;
+  transform: scale(1.3);
+  z-index: 2;
+  transition: all 0.3s linear;
 }
 
 .audio-bottom-black {
@@ -146,7 +148,7 @@
   width: 18rem;
   height: 3.8rem;
   margin-left: 0.6rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #00000033;
   border-radius: 3rem;
   display: flex;
   align-items: center;
@@ -158,9 +160,10 @@
 .audio-title-text-black {
 	animation: audio-title-anim-black 12s linear infinite;
   white-space: nowrap;
-  color: white;
+  color: #FFFFFF99;
   width: 20rem;
   font-size: 1.2rem;
+  pointer-events: none;
 }
 
 .audio-progress-text-black {
@@ -173,6 +176,7 @@
   width: 5.3rem;
   overflow: hidden;
   width: 18rem;
+  pointer-events: none;
 }
 
 @keyframes audio-title-anim-black {
@@ -196,11 +200,13 @@
 .audio-playlist-container-black {
   width: 32.5rem;
   height: 20rem;
+  background-color: rgb(46, 50, 53);
   overflow-y: auto;
   overflow-x: hidden;
   margin-top: 0.2rem;
   transform-origin: 50% 0 0;
   animation: audio-playlist-display-anim-black 500ms ease-out;
+  border-radius: 1rem;
 }
 
 .audio-playlist-container-hide-black {
@@ -209,21 +215,20 @@
 
 .audio-playlist-container-black::-webkit-scrollbar {
   width: 1rem;
-  background-color: #FFFFFF;
+  background-color: rgb(46, 50, 53);
 }
 
 .audio-playlist-container-black::-webkit-scrollbar-thumb{
   box-shadow:inset 0 0 7px rgba(0,0,0,.3);
   border-radius: 0.5rem;
-  background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgb(83, 85, 87) 50%);
+  background: #FFFFFF33;
 }
 
 .audio-playlist-item-black {
   width: 32rem;
-  height: 5rem;
-  font-size: 1.2rem;
-  color: #FFFFFF;
-  background-color:#000000;
+  height: 3rem;
+  font-size: 1rem;
+  color: #FFFFFF99;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -232,20 +237,39 @@
   position: relative;
 }
 
-/*
-.audio-playlist-item-black:hover {
-  background-color:#87CEFA;
-}*/
+/* even number style */
+.audio-playlist-even-item-black {
+  width: 32rem;
+  height: 3rem;
+  font-size: 1rem;
+  color: #FFFFFF99;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  border-top: 0.05rem dotted #696969;
+  position: relative;
+}
 
 .audio-item-index-black {
   width: 1rem;
+  margin-left: 1.2rem;
+}
+
+.audio-item-name-focus-black {
+  width: 12rem;
   margin-left: 2rem;
+  color: #00E5EE;
 }
 
 .audio-item-name-black {
-  width: 8rem;
+  width: 12rem;
   text-align: left;
   margin-left: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
 }
 
 .audio-item-author-black {
@@ -258,7 +282,7 @@
 
 .audio-item-focus-black {
   width: 32rem;
-  height: 5rem;
+  height: 3rem;
   font-size: 1.5rem;
   color: #00E5EE;
   background-color:#4682B4;
@@ -286,11 +310,21 @@
   margin-left: 0.25rem;
   width: 1.5rem;
   height: 0.2rem;
-  background-color: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+@keyframes audio-button-bg {
+  0% {opacity: 0.6;}
+  100% {opacity: 1;}
 }
 
 .audio-list-button-container-black:hover {
   box-shadow: darkgray 0rem 0rem 0.5rem 0.5rem;
+  transform: scale(1.3);
+  z-index: 2;
+  transition: all 0.3s linear;
+  animation: audio-list-button-bg 0.6s linear;
+  opacity: 1;
 }
 
 .audio-volume-view-black {
@@ -338,7 +372,6 @@
 .audio-volume-icon-container-black {
   width: 2rem;
   height: 2rem;
- 
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -348,4 +381,127 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.audio-lyric-button-container-black {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.audio-lyric-button-container-black:hover {
+  box-shadow: darkgray 0rem 0rem 0.5rem 0.5rem;
+  transform: scale(1.3);
+  z-index: 2;
+  transition: all 0.3s linear;
+  animation: audio-button-bg 0.6s linear;
+  opacity: 1;
+}
+
+@keyframes audio-lyrics-anim-black {
+  0% {
+    transform: scaleX(0.001);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.audio-lyrics-root-black {
+  position: absolute;
+  left: 33rem;
+  top: 0;
+  transform-origin: 0 50% 0;
+  animation: audio-lyrics-anim-black 500ms ease-out;
+  background-color: rgb(46, 50, 53);
+  border-radius: 1rem;
+}
+
+.audio-lyrics-container-black {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 20rem;
+  height: 28.7rem;
+  box-sizing: border-box;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+.audio-lyric-item-black {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  color: #FFFFFF99;
+  height: 1.6rem;
+  overflow: hidden;
+}
+
+.audio-lyric-item-focus-black {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  color: #00E5EE;
+  font-weight: 900;
+  height: 1.6rem;
+  overflow: hidden;
+  transform: scale(1.2);
+  transition: all 0.3s linear;
+}
+
+.audio-lyrics-container-black::-webkit-scrollbar {
+  width: 1rem;
+  background-color:rgb(46, 50, 53);
+  border-radius: 1rem;
+}
+
+.audio-lyrics-container-black::-webkit-scrollbar-thumb{
+  border-radius: 0.5rem;
+  background: #FFFFFF33;
+  margin-right: 0.2rem;
+}
+
+.audio-shadow-top-black {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 95%);
+  height: 6rem;
+  width: 20rem;
+  position: absolute;
+  z-index: 1;
+  top: 0rem;
+  border-radius: 1rem;
+}
+
+.audio-shadow-bottom-black {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 95%);
+  top: 22.7rem;
+  height: 6rem;
+  width: 20rem;
+  position: absolute;
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+.audio-no-lyric-tip-black {
+  color: #FFFFFF99;
+  font-size: 2.6rem;
+  text-align: center;
+  line-height: 28.7rem;
+  width: 20rem;
+  height: 28.7rem;
+}
+
+.effect-container-black {
+  width: 18rem;
+  height: 3.8rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

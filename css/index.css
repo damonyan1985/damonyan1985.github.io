@@ -50,4 +50,12 @@
     margin-right: 10px;
     width: 200px;
     white-space:nowrap;
+    color: #FFFFFF;
+}
+
+.little-container {
+    width: 18rem;
+    height: 3.8rem;
+    border-radius: 1rem;
+    overflow: hidden;
 }
