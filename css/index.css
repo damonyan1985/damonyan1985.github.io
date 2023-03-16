@@ -1,5 +1,12 @@
 .body {
-    background-color:white;
+    background-image: url('../img/bg/index_bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #3E363F;
+    font-family: "Lato", sans-serif;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #root {
