@@ -86,6 +86,7 @@
   border-radius: 50%;
   display: flex;
   align-items: center;
+  opacity: 0.6;
 }
 
 .audio-button-container-black:hover {
@@ -93,6 +94,7 @@
   transform: scale(1.3);
   z-index: 2;
   transition: all 0.3s linear;
+  opacity: 1;
 }
 
 .audio-bottom-black {
@@ -127,7 +129,8 @@
 .audio-image-container-black {
   width: 6.5rem;
   height: 4rem;
-  background-color: rgba(125, 180, 255, 0.5)
+  background-color: rgba(125, 180, 255, 0.5);
+  border-radius: 0.6rem;
 }
 
 .audio-image-black {
