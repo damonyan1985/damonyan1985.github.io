@@ -1,5 +1,5 @@
 .audio-player {
-  width: 32.5rem;
+  width: 35rem;
   height: 8.5rem;
   background: #014464; 
   background: linear-gradient(to bottom, rgba(28, 91, 155, 1) 0%, rgba(108, 191, 255, 1) 70%);
@@ -11,7 +11,7 @@
 
 .audio-container-blink {
   position: absolute;
-  width: 32rem;
+  width: 34.5rem;
   height: 2rem;
   margin-left: 0.25rem;
   border-radius: 0.6rem;
@@ -87,10 +87,12 @@
   border-radius: 50%;
   display: flex;
   align-items: center;
+  opacity: 0.6;
 }
 
 .audio-button-container:hover {
-  box-shadow: darkgray 0rem 0rem 0.5rem 0.5rem;
+  transition: all 0.3s linear;
+  opacity: 1;
 }
 
 .audio-bottom {
@@ -117,15 +119,18 @@
 }
 
 .audio-progress {
-  background-color: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(to bottom, #0cf565 0%, #008B45 70%);
   height: 0.5rem;
+  width: 0;
   border-radius: 0.3rem;
 }
 
 .audio-image-container {
   width: 6.5rem;
   height: 4rem;
-  background-color: rgba(125, 180, 255, 0.5)
+  background-color: rgba(125, 180, 255, 0.5);
+  overflow: hidden;
+  border-radius: 0.6rem;
 }
 
 .audio-image {
@@ -195,17 +200,37 @@
   }
 }
 
+@keyframes audio-playlist-display-anim {
+  0% {
+    transform: scaleY(0.001);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.audio-playlist-show-black {
+  transform-origin: 50% 0 0;
+  animation: audio-playlist-display-anim 500ms ease-out;
+}
+
+.audio-playlist-root {
+  position: relative;
+  border-radius: 1rem;
+}
+
 .audio-playlist-container {
-  width: 32.5rem;
+  width: 35rem;
   height: 20rem;
   overflow-y: auto;
   overflow-x: hidden;
   margin-top: 0.2rem;
-  transform-origin: 50% 0 0;
-  animation: audio-playlist-anim 500ms ease-out;
   border-radius: 1rem;
-  background-color: rgba(108, 191, 255, 1);
+  background-color: rgba(43, 100, 155, 1);
   color: #FFFFFF;
+  box-sizing: border-box;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .audio-playlist-container-hide {
@@ -215,6 +240,7 @@
 .audio-playlist-container::-webkit-scrollbar {
   width: 1rem;
   background-color: #87CEEB;
+  border-radius: 1rem;
 }
 
 .audio-playlist-container::-webkit-scrollbar-thumb{
@@ -224,33 +250,33 @@
 }
 
 .audio-playlist-item {
-  width: 32rem;
+  width: 34.5rem;
   height: 3rem;
   font-size: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  border-top: 0.05rem dotted #B0E0E6;
+  border-bottom: 0.05rem dotted #B0E0E6;
   position: relative;
 }
 
 .audio-playlist-even-item {
-  width: 32rem;
+  width: 34.5rem;
   height: 3rem;
   font-size: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  border-top: 0.05rem dotted #B0E0E6;
+  border-bottom: 0.05rem dotted #B0E0E6;
   position: relative;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .audio-playlist-item-hover {
-  width: 32rem;
-  height: 3rem;
+  width: 100%;
+  height: 100%;
   position: absolute;
   overflow: hidden;
   z-index: 1;
@@ -342,13 +368,14 @@
 }
 
 .audio-list-button-container:hover {
-  box-shadow: darkgray 0rem 0rem 0.5rem 0.5rem;
+  transition: all 0.3s linear;
+  opacity: 1;
 }
 
 .audio-volume-view {
   position: relative;
   background-color: rgba(255, 255, 255, 0.2);
-  width: 3rem;
+  width: 5.5rem;
   height: 0.5rem;
   border-radius: 0.3rem;
   cursor: pointer;
@@ -376,11 +403,11 @@
 }
 
 .audio-volume-icon-first {
-  margin-left: 0.6rem;
+  margin-left: 0.5rem;
   height: 0.4rem;
   width: 0.4rem;
   border-width: 0rem;
-  background-color: #70809099;
+  background-color: #FFFFFFFF;
 }
 
 .audio-volume-icon {
@@ -388,7 +415,7 @@
   border-style: solid;
   margin-left: -0.4rem;
   border-width: 0.4rem 0.6rem 0.4rem 0;
-  border-color: transparent #70809099 transparent transparent;
+  border-color: transparent #FFFFFFFF transparent transparent;
 }
 
 .audio-volume-mute {
@@ -402,11 +429,17 @@
 }
 
 .audio-volume-icon-container {
-  width: 2rem;
+  width: 1.6rem;
   height: 2rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
+  opacity: 0.6;
+}
+
+.audio-volume-icon-container:hover {
+  transition: all 0.3s linear;
+  opacity: 1;
 }
 
 .audio-volume-container {
@@ -430,10 +463,13 @@
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.4);
   text-align: center;
+  line-height: 2rem;
+  font-weight: 900;
 }
 
 .audio-lyric-button-container:hover {
-  box-shadow: darkgray 0rem 0rem 0.5rem 0.5rem;
+  transition: all 0.3s linear;
+  opacity: 1;
 }
 
 @keyframes audio-lyrics-anim {
@@ -445,14 +481,18 @@
   }
 }
 
-.audio-lyrics-root {
-  position: absolute;
-  left: 33rem;
-  top: 0;
+.audio-lyric-show {
   transform-origin: 0 50% 0;
   animation: audio-lyrics-anim 500ms ease-out;
-  background-color: rgba(108, 191, 255, 1);
+}
+
+.audio-lyrics-root {
+  position: absolute;
+  left: 35.5rem;
+  top: 0;
+  background-color: rgba(43, 100, 155, 1);
   border-radius: 1rem;
+  overflow: hidden;
 }
 
 .audio-lyrics-container {
@@ -469,8 +509,8 @@
   text-align: left;
   margin-top: 0.2rem;
   margin-left: 1rem;
-  font-size: 1rem;
-  height: 1.6rem;
+  font-size: 1.2rem;
+  height: 2rem;
   overflow: hidden;
   color: #FFFFFF;
 }
@@ -479,10 +519,10 @@
   text-align: left;
   margin-top: 0.2rem;
   margin-left: 1rem;
-  font-size: 1rem;
-  color: #4682B4;
+  font-size: 1.2rem;
+  color: #0cf565;
   font-weight: 900;
-  height: 1.6rem;
+  height: 2rem;
   overflow: hidden;
   transform: scale(1.2);
   transform-origin: 0 50% 0;
@@ -491,34 +531,38 @@
 
 .audio-lyrics-container::-webkit-scrollbar {
   width: 1rem;
-  background-color: #87CEFA;
+  background-color: rgba(43, 100, 155, 1);
   border-radius: 1rem;
+  overflow: hidden;
 }
 
 .audio-lyrics-container::-webkit-scrollbar-thumb{
+  box-shadow:inset 0 0 7px rgba(43, 100, 155,.3);
   border-radius: 0.5rem;
-  background: #FFFFFF99;
+  background: #FFFFFF33;
   margin-right: 0.2rem;
 }
 
 .audio-shadow-top {
   background: linear-gradient(to bottom, #87CEFAEE 0%, rgba(0, 0, 0, 0) 95%);
   height: 6rem;
-  width: 20rem;
+  width: 100%;
   position: absolute;
   z-index: 1;
   top: 0rem;
   border-radius: 1rem;
+  pointer-events: none;
 }
 
 .audio-shadow-bottom {
   background: linear-gradient(to top, #87CEFAEE 0%, rgba(0, 0, 0, 0) 95%);
-  top: 22.7rem;
+  bottom: 0;
   height: 6rem;
-  width: 20rem;
+  width: 100%;
   position: absolute;
   z-index: 1;
   border-radius: 1rem;
+  pointer-events: none;
 }
 
 .audio-no-lyric-tip {
@@ -557,4 +601,107 @@
       margin-left: 100%;
       transform: translateX(-100%);
   }
+}
+
+.audio-setting-button-container {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.audio-setting-button-inner {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 0.3rem solid rgba(0, 0, 0, 0.4); 
+}
+
+.audio-setting-button-container:hover {
+  transition: all 0.3s linear;
+  opacity: 1;
+}
+
+.audio-settings-container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 22rem;
+  height: 28.7rem;
+  box-sizing: border-box;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.audio-settings-container::-webkit-scrollbar {
+  width: 1rem;
+  background-color: rgba(43, 100, 155, 1);
+  border-radius: 1rem;
+}
+
+.audio-settings-container::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background: #FFFFFF33;
+  margin-right: 0.2rem;
+}
+
+.audio-add-song-root {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 57.5rem;
+  height: 28.7rem;
+  background-color: rgba(43, 100, 155, 0.6);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.audio-add-song-container {
+  overflow: hidden;
+  width: 24rem;
+  height: 27rem;
+  box-sizing: border-box;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  background-color: rgba(43, 100, 155, 1);
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.2) 0rem 0rem 0.5rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.audio-add-song-container-close {
+  width: 1.6rem;
+  height: 1.6rem;
+  text-align: center;
+  line-height: 1.6rem;
+  border-radius: 0.8rem;
+  background-color: rgba(255, 255, 255);
+  cursor: pointer;
+  opacity: 0.4;
+  color: #00000099;
+}
+
+.audio-add-song-container-close:hover {
+  transition: all 0.3s linear;
+  opacity: 1;
+}
+
+.audio-add-song-input::placeholder  {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.2rem;
 }

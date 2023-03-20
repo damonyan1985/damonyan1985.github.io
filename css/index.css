@@ -29,7 +29,7 @@
 
 .setting-panel {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     height: 7rem;
     align-items: center;
     background-color: rgba(138, 43, 226, 0.2);
@@ -46,9 +46,9 @@
 }
 
 .setting-title {
-    margin-left: 20px;
-    margin-right: 10px;
-    width: 200px;
+    margin-left: 4rem;
+    margin-right: 1rem;
+    width: 20rem;
     white-space:nowrap;
     color: #FFFFFF;
 }
@@ -58,4 +58,14 @@
     height: 3.8rem;
     border-radius: 1rem;
     overflow: hidden;
+}
+
+.desktop-title {
+    width: 100%;
+    color: #FFFFFFEE;
+    line-height: 7rem;
+    text-align: center;
+    font-size: 3rem;
+    overflow: hidden;
+    white-space: nowrap;
 }
