@@ -1,0 +1,75 @@
+.audio-widget-opacity {
+    opacity: 0.6;
+}
+
+.audio-widget-opacity:hover {
+    transition: all 0.3s linear;
+    opacity: 1;
+}
+
+@keyframes audio-center-show-anim {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes audio-center-hide-anim {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+.audio-center-hide {
+    transform-origin: 50% 50% 0;
+    animation: audio-center-hide-anim 500ms ease-in-out;
+    transform: scale(0,0);
+}
+
+.audio-center-show {
+    animation: audio-center-show-anim 500ms ease-in-out;
+    transform-origin: 50% 50% 0;
+}
+
+@keyframes audio-left-show-anim {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+}
+
+@keyframes audio-left-hide-anim {
+    0% {
+      transform: scaleX(1);
+    }
+    100% {
+      transform: scaleX(0);
+    }
+}
+
+.audio-left-hide {
+    transform-origin: 0 50% 0;
+    animation: audio-left-hide-anim 500ms ease-in-out;
+    transform: scale(0,0);
+}
+  
+.audio-left-show {
+    transform-origin: 0 50% 0;
+    animation: audio-left-show-anim 500ms ease-in-out;
+}
+
+@keyframes audio-top-hide-anim {
+    0% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(0);
+    }
+}

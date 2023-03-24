@@ -164,7 +164,7 @@
 	animation: audio-title-anim 12s linear infinite;
   white-space: nowrap;
   color: white;
-  width: 20rem;
+  width: fit-content;
   font-size: 1.2rem;
   pointer-events: none;
 }
@@ -184,7 +184,7 @@
 
 @keyframes audio-title-anim {
   0% {
-    transform: translate(100%, 0);
+    transform: translate(18rem, 0);
   }
   100% {
     transform: translate(-100%, 0);
@@ -209,7 +209,7 @@
   }
 }
 
-.audio-playlist-show-black {
+.audio-playlist-show {
   transform-origin: 50% 0 0;
   animation: audio-playlist-display-anim 500ms ease-out;
 }
@@ -234,7 +234,11 @@
 }
 
 .audio-playlist-container-hide {
-  display: none;
+  transform-origin: 50% 0 0;
+  animation: audio-top-hide-anim 500ms ease-out;
+  position: relative;
+  border-radius: 1rem;
+  transform: scale(0,0);
 }
 
 .audio-playlist-container::-webkit-scrollbar {
@@ -302,12 +306,13 @@
 }
 
 .audio-item-index {
-  width: 1rem;
-  margin-left: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
+  text-align: right;
 }
 
 .audio-item-name-focus {
-  width: 8rem;
+  width: 12rem;
   text-align: left;
   margin-left: 2rem;
   color: #0cf565;
@@ -317,7 +322,7 @@
 }
 
 .audio-item-name {
-  width: 8rem;
+  width: 12rem;
   text-align: left;
   margin-left: 2rem;
   color: #FFFFFFFF;
@@ -704,4 +709,8 @@
 .audio-add-song-input::placeholder  {
   color: rgba(255, 255, 255, 0.3);
   font-size: 1.2rem;
+}
+
+.audio-main-color {
+  color: rgba(43, 100, 155, 1);
 }

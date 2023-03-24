@@ -166,8 +166,8 @@
 .audio-title-text-black {
 	animation: audio-title-anim-black 12s linear infinite;
   white-space: nowrap;
-  color: #FFFFFF99;
-  width: 20rem;
+  color: #FFFFFFEE;
+  width: fit-content;
   font-size: 1.2rem;
   pointer-events: none;
 }
@@ -187,7 +187,7 @@
 
 @keyframes audio-title-anim-black {
   0% {
-    transform: translate(100%, 0);
+    transform: translate(18rem, 0);
   }
   100% {
     transform: translate(-100%, 0);
@@ -200,15 +200,6 @@
   }
   100% {
     transform: scaleY(1);
-  }
-}
-
-@keyframes audio-playlist-hide-anim-black {
-  0% {
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleY(0);
   }
 }
 
@@ -237,7 +228,7 @@
 
 .audio-playlist-container-hide-black {
   transform-origin: 50% 0 0;
-  animation: audio-playlist-hide-anim-black 500ms ease-out;
+  animation: audio-top-hide-anim 500ms ease-out;
   position: relative;
   border-radius: 1rem;
   transform: scale(0,0);
@@ -663,4 +654,8 @@
 .audio-skin-radio-border:hover {
   transition: all 0.3s linear;
   opacity: 1;
+}
+
+.audio-main-color-black {
+  color: rgb(46, 50, 53, 0.6);
 }
