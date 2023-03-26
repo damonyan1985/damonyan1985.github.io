@@ -137,6 +137,7 @@
   width: inherit;
   height: inherit;
   border-width: 0rem;
+  pointer-events: none;
 }
 
 .audio-header {
@@ -191,29 +192,6 @@
   }
 }
 
-@keyframes audio-playlist-anim {
-  0% {
-    transform: scaleY(0.001);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-
-@keyframes audio-playlist-display-anim {
-  0% {
-    transform: scaleY(0.001);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-
-.audio-playlist-show {
-  transform-origin: 50% 0 0;
-  animation: audio-playlist-display-anim 500ms ease-out;
-}
-
 .audio-playlist-root {
   position: relative;
   border-radius: 1rem;
@@ -227,7 +205,7 @@
   margin-top: 0.2rem;
   border-radius: 1rem;
   background-color: rgba(43, 100, 155, 1);
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.8);
   box-sizing: border-box;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -325,7 +303,7 @@
   width: 12rem;
   text-align: left;
   margin-left: 2rem;
-  color: #FFFFFFFF;
+  color: rgba(255, 255, 255, 0.8);
   overflow: hidden;
   white-space: nowrap;
   text-overflow:ellipsis;

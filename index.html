@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#000000" />
-    <title>Title</title>
+    <title>Boyia Desktop</title>
     <link href="css/index.css" rel="stylesheet" type="text/css" />
     <link href="css/audio-black.css" rel="stylesheet" type="text/css" />
     <link href="css/audio-style.css" rel="stylesheet" type="text/css" />
@@ -16,6 +16,7 @@
     <link href="css/switch.css" rel="stylesheet" type="text/css" />
     <link href="css/audio-switch.css" rel="stylesheet" type="text/css" />
     <link href="css/audio-util.css" rel="stylesheet" type="text/css" />
+    <link href="css/sys-style.css" rel="stylesheet" type="text/css" />
     <script src="js/thirdparty/jquery.js" type="text/javascript"></script>
     <script type="text/javascript">
         (function () {
@@ -28,7 +29,8 @@
 <body class="body">
 <div id="root"></div>
 <script type="text/javascript">
-  const kPlaylistUrl = '/json/playlist.json';
+  const kHostPath = '';
+  const kPlaylistUrl = `${kHostPath}/json/playlist.json`;
 </script>
 <script type="text/javascript" src="js/minify/dist/index.min.js">
 </script>
