@@ -479,7 +479,7 @@
 }
 
 .audio-lyrics-container {
-  width: 20rem;
+  width: 22rem;
   height: 28.7rem;
   overflow-y: auto;
   overflow-x: hidden;
@@ -489,9 +489,8 @@
 }
 
 .audio-lyric-item {
-  text-align: left;
+  text-align: center;
   margin-top: 0.2rem;
-  margin-left: 1rem;
   font-size: 1.2rem;
   height: 2rem;
   overflow: hidden;
@@ -499,16 +498,14 @@
 }
 
 .audio-lyric-item-focus {
-  text-align: left;
+  text-align: center;
   margin-top: 0.2rem;
-  margin-left: 1rem;
   font-size: 1.2rem;
   color: #0cf565;
   font-weight: 900;
   height: 2rem;
   overflow: hidden;
-  transform: scale(1.2);
-  transform-origin: 0 50% 0;
+  transform: scale(1.1);
   transition: all 0.3s linear;
 }
 
