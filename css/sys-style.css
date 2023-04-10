@@ -39,7 +39,7 @@
 }
 
 
-@keyframes sys-fileui-display-anim {
+@keyframes sys-commonui-display-anim {
     0% {
         transform: translateY(100%);
     }
@@ -47,11 +47,11 @@
         transform: translateY(0);
     }
 }
-.sys-fileui-display {
-    animation: sys-fileui-display-anim 500ms ease-in-out;
+.sys-commonui-display {
+    animation: sys-commonui-display-anim 500ms ease-in-out;
 }
 
-@keyframes sys-fileui-hide-anim {
+@keyframes sys-commonui-hide-anim {
     0% {
         transform: translateY(0);
     }
@@ -59,8 +59,8 @@
         transform: translateY(100%);
     }
 }
-.sys-fileui-hide {
-    animation: sys-fileui-hide-anim 500ms ease-in-out;
+.sys-commonui-hide {
+    animation: sys-commonui-hide-anim 500ms ease-in-out;
     transform: translateY(100%);
 }
 
