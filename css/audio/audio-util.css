@@ -106,6 +106,27 @@
     animation: audio-playlist-display-anim 500ms ease-out;
 }
 
+.audio-playlist-hide {
+    transform-origin: 50% 0 0;
+    animation: audio-top-hide-anim 500ms ease-out;
+    position: relative;
+    border-radius: 1rem;
+    transform: scale(0,0);
+}
+
+.audio-playlist-lock-hide {
+    transform-origin: 50% 100% 0;
+    animation: audio-top-hide-anim 500ms ease-out;
+    position: relative;
+    border-radius: 1rem;
+    transform: scale(0,0);
+}
+
+.audio-playlist-lock-show {
+    transform-origin: 50% 100% 0;
+    animation: audio-playlist-display-anim 500ms ease-out;
+}
+
 .audio-close-container {
     position: absolute;
     top: -0.8rem;

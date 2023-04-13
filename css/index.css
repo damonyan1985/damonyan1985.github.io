@@ -24,10 +24,8 @@
 }
 
 .index-audio-player {
-    position: absolute;
     top: 20rem;
     left: 20rem;
-    transform: scale(1);
 }
 
 .setting-panel {

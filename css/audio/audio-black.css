@@ -417,27 +417,12 @@
   opacity: 1;
 }
 
-@keyframes audio-lyrics-anim-black {
-  0% {
-    transform: scaleX(0.001);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-.audio-lyric-show-black {
-  transform-origin: 0 50% 0;
-  animation: audio-lyrics-anim-black 500ms ease-out;
-}
-
 .audio-lyrics-root-black {
-  position: absolute;
-  left: 35.5rem;
-  top: 0;
   background-color: rgb(46, 50, 53);
   border-radius: 1rem;
   overflow: hidden;
+  width: 22rem;
+  position: relative;
 }
 
 .audio-lyrics-container-black {
@@ -581,8 +566,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 57.5rem;
-  height: 28.7rem;
   background-color: rgb(46, 50, 53, 0.6);
   border-radius: 1rem;
   overflow: hidden;

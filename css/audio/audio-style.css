@@ -455,27 +455,12 @@
   opacity: 1;
 }
 
-@keyframes audio-lyrics-anim {
-  0% {
-    transform: scaleX(0.001);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-.audio-lyric-show {
-  transform-origin: 0 50% 0;
-  animation: audio-lyrics-anim 500ms ease-out;
-}
-
 .audio-lyrics-root {
-  position: absolute;
-  left: 35.5rem;
-  top: 0;
   background-color: rgba(43, 100, 155, 1);
   border-radius: 1rem;
   overflow: hidden;
+  width: 22rem;
+  position: relative;
 }
 
 .audio-lyrics-container {
