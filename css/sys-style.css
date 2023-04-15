@@ -110,3 +110,29 @@
 .sys-maximize:after {top:0; right:0; border-width: 0.3rem 0.3rem 0 0}
 .sys-maximize>:first-child:before { bottom:0; right:0; border-width: 0 0.3rem 0.3rem 0}
 .sys-maximize>:first-child:after { bottom:0; left:0; border-width: 0 0 0.3rem 0.3rem}
+
+
+.sys-minimize {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.sys-minimize:hover {
+    transition: all 0.3s linear;
+    opacity: 1;
+}
+
+.sys-minimize:before, .sys-minimize:after, .sys-minimize>:first-child:before, .sys-minimize>:first-child:after {
+    position:absolute;
+    width:0.4rem; height: 0.4rem;
+    border-color:#FFFFFF;
+    border-style:solid;
+    content: ' ';
+}
+.sys-minimize:before { top:0; left:0; border-width: 0 0.3rem 0.3rem 0}
+.sys-minimize:after {top:0; right:0; border-width: 0 0 0.3rem 0.3rem}
+.sys-minimize>:first-child:before { bottom:0; right:0; border-width: 0.3rem 0 0 0.3rem}
+.sys-minimize>:first-child:after { bottom:0; left:0; border-width: 0.3rem 0.3rem 0 0 }
