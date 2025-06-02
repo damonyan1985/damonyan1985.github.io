@@ -71,7 +71,7 @@
     bottom: 0;
     right: 0;
     margin: auto;
-    height: 6rem;
+    height: 9rem;
 }
 
 .sys-fileui-container::-webkit-scrollbar {
@@ -136,3 +136,7 @@
 .sys-minimize:after {top:0; right:0; border-width: 0 0 0.3rem 0.3rem}
 .sys-minimize>:first-child:before { bottom:0; right:0; border-width: 0.3rem 0 0 0.3rem}
 .sys-minimize>:first-child:after { bottom:0; left:0; border-width: 0.3rem 0.3rem 0 0 }
+
+img[src=""], img:not([src]){
+    opacity:0;
+}
